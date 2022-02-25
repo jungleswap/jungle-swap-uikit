@@ -32,7 +32,7 @@ export { default as MinusIcon } from "./Icons/Minus";
 export { default as NoProfileAvatarIcon } from "./Icons/NoProfileAvatar";
 export { default as OpenNewIcon } from "./Icons/OpenNew";
 export { default as PancakesIcon } from "./Icons/Pancakes";
-export { default as PancakeRoundIcon } from "./Icons/PancakeRound";
+// export { default as PancakeRoundIcon } from "./Icons/JungleswapRound";
 export { default as PlayCircleOutlineIcon } from "./Icons/PlayCircleOutline";
 export { default as PrizeIcon } from "./Icons/Prize";
 export { default as RemoveIcon } from "./Icons/Remove";

@@ -1,28 +1,29 @@
 {
-  "name": "@pancakeswap-libs/uikit",
-  "version": "0.15.0",
-  "description": "Set of UI components for pancake projects",
+  "name": "jungleswap-libs",
+  "version": "0.15.4",
+  "description": "Set of UI components for JungleSwap projects",
+  "author": "Muhammad Arslan",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-uikit",
+  "repository": "https://github.com/MuhammadArslanKhan96/jungleswap-uikit",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
+    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:check": "prettier --check --loglevel error './src/**/*.{js,jsx,ts,tsx}'",
+    "format:write": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
-    "release": "yarn build && np"
+    "release": "yarn build && np",
+    "deploy": "gh-pages -d build"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn format:write",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
@@ -82,6 +83,7 @@
     "@types/styled-system": "^5.1.10",
     "lodash": "^4.17.20",
     "react-transition-group": "^4.4.1",
+    "rimraf": "^3.0.2",
     "styled-system": "^5.1.5"
   }
 }
