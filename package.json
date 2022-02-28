@@ -1,6 +1,6 @@
 {
   "name": "jungleswap-libs",
-  "version": "0.15.5",
+  "version": "0.15.8",
   "description": "Set of UI components for JungleSwap projects",
   "author": "Muhammad Arslan",
   "main": "dist/index.cjs.js",
@@ -21,12 +21,6 @@
     "test": "jest",
     "release": "yarn build && np",
     "deploy": "gh-pages -d build"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format:write",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "jest": {
     "setupFilesAfterEnv": [
